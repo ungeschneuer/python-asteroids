@@ -1,0 +1,44 @@
+Schiff, welches als Avatar des Spielers gilt. Enthält Informationen wie Punkte und Lebensenergie, sowie Parameter, die das Schiff an den Spielmodus anpassen können.
+Auf eine Bremse wurde mit Absicht verzichtet, da es meiner Meinung nach die Spielmechanik zu sehr vereinfacht.
+
+ship.py
+------------------
+
+**__init__(Point, mode) -> Ship**
+Basiert ebenfalls auf Polygon. Enthält jedoch des weiteren die Variablen strength, lives und score, sowie die Einstellung *mode*, die die Farbdarstellung für die verschiedenen Farben reguliert.
+
+**speedup()**
+Beschleunigt das Schiff um einen fest definierten Wert.
+
+**floating()**
+Wird nicht mehr beschleunigt, hört das Schiff nicht sofort auf zu fliegen, sondern driftet noch etwas.
+
+**resetPosition()**
+Positioniert das Schiff wieder in Ausgangsposition. Dies kommt bei neuen Levels aber auch bei dem Verlust eines Lebens zum Einsatz.
+
+**resetComplete()**
+Bringt das Schiff wieder in dem Initialisierungszustand.
+
+**damaged()**
+Wird das Schiff getroffen, wird ihm Lebensenergie abgezogen, hat es keine mehr, wird ein Leben abgezogen und das Schiff auf Ausgangsposition gesetzt. Dabei kann es durchaus sein, dass es auf einen Asteroiden gesetzt wird.
+
+**setStrength(Integer)**
+Lebensenergie wird positiv oder negativ verändert, jedoch nur bis 100%.
+
+**getStrength() -> Integer**
+Gibt Lebensenergie des Schiffes aus.
+
+**getLives() -> Integer**
+Gibt Leben des Schiffes aus.
+
+**setLives()**
+Anzahl an Leben werden positiv oder negativ verändert.
+
+**setScore(Integer)**
+Verändert Punkte positiv oder negativ.
+
+**getScore() -> Integer**
+Gibt Punktezahl des Schiffes aus.
+
+**draw(screen)**
+Zeichnet Schiff auf dem Ausgabe-Fenster mit aktuellen Koordinaten. Im Classic-Modus wird je nach Lebensenergie die Farbe des Schiffs verändert.

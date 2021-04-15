@@ -1,0 +1,25 @@
+Die Module, die für den Start des Programmes nötig und wichtig sind, sowie die erste Darstellung beim Start vorgeben.
+
+configuration.py
+------------------
+Dieses Modul bietet statische Variablen, die von sämtlichen Modulen genutzt werden, um zum einen bei der Entwicklung eine schnelle Anpassung zu ermöglichen und zum anderen Entwicklern zu ermöglichen, das Spiel schnell ihren eigenen Wünschen bis zu einem bestimmten Grad anzupassen.
+In einer späteren Version könnte dieses Modul durch eine Settings-Funktion ergänzt werden.
+
+**quitwindow()**
+Dient zum sicheren Beenden des Programmes auf allen Ebenen.
+
+start.py
+------------------
+Dies ist der Startpunkt für den Nutzer. Es wird ein Menü dargestellt, welches den Zugang zu den Spiel-Modi und die Einsicht des Highscores Steuerung bietet. Das Programm kann jederzeit durch Schließen des Fensters, aber auch durch das Auswählen von Exit beendet werden.
+
+**mainmenu()**
+Ist für die Darstellung und Navigation des Menüs verantwortlich. Der ausgewählte Punkt wird durch einen transparenten Balken dargestellt. Ausgewählt wird mit der Leertaste oder Return.
+
+**highscore()**
+Ist für die Darstellung des Highscores zuständig. Die Darstellung ist auf Namen mit maximal 6 Zeichen begrenzt, dessen Überschreitung auch bei der Eingabe verhindert wird. Es werden nur die besten 10 Scores angezeigt. Der User kann durch drücken der Leertaste oder Return wieder in das Menu gelangen.
+
+**singlecontrol()**
+Gibt Infos über die Steuerung für eine Person. Kann durch drücken von Leertaste oder Return verlassen werden um zum Spiel zu gelangen.
+
+**multicontrol()**
+Gibt Infos über die Steuerung für zwei Personen. Kann durch drücken von Leertaste oder Return verlassen werden um zum Spiel zu gelangen.

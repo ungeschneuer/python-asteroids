@@ -1,0 +1,13 @@
+Duell-Modus wird zu zweit gespielt und ermöglicht das gegenseitige Bekämpfen.
+
+duell.py
+------------------
+
+**newgame(Screen)**
+Für Spielmechanik verantwortlich. Die Schiffe können nur vom gegnerischen Geschoss getroffen werden und bei einer Kollision wird Beiden Schaden zugefügt.
+
+**scoreone(Ship, Screen) und scoretwo(Ship, Screen)**
+Sind für die Anzeige der Statistiken verantwortlich.
+
+**gameover(Screen, Ship, Ship)**
+Das Spiel ist zuende, wenn eines der beiden Schiffe stirbt. Das Ergebnis wird nochmal visuell dargestellt, bevor es zurück ins Menü geht.

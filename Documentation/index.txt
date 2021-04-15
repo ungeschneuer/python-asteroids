@@ -1,0 +1,6 @@
+Dies ist die Dokumentation für das Abschlussprojekt in Diskrete Strukturen für das Wintersemester 2017. Alle Unterseiten können Sie über **Table of Content** finden.
+
+Das Programm benötigt Python 3.6.1, sowie die Pakete pygame, random, os, sys und datetime. Die Entwicklung fand auf einem Macintosh mit macOS 10.13.03 statt und wurde auch nur auf diesem getestet.
+Der Startpunkt des Programmes ist start.py. Sämtliche weitere Module sind nicht für den direkten Aufruf durch Spielende gedacht.
+
+Viel Spaß.

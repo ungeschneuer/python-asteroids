@@ -1,0 +1,12 @@
+Klassen, die die zu zerschießenden Objekte darstellen.
+
+asteroid.py
+------------------
+
+### Class Asteroid
+**__init__(Point, Float, Float) -> Asteroid**
+Definiert Position, Geschwindigkeit und Richtung. Basiert auf Polygon.
+
+### Class Rock
+**__init__(Point, Float, Float) -> Rock**
+Definiert Position, Geschwindigkeit und Richtung. Basiert auf Polygon.

@@ -1,0 +1,32 @@
+Classic Modus ist das klassiches Single Player Spiel.
+
+classic.py
+------------------
+
+**newgame(Screen)**
+Zentrale Funktion des Spieles, welches sich um die Annahme der Steuerbefehle und die Anpassung an Spielgegebenheiten kümmert.
+Hier werden alle Objekte definiert und ihre Darstellung sichergestellt.
+
+Die Rhytmus der Schüsse wird zeitlich limitiert, um ein flüssiges Spiel zu ermöglichen. Zur Schonung der Ressourcen werden Objekte, die den Bildschirm verlassen haben oder zerstört wurden, erstmal nur deaktiviert und nicht gelöscht. Bei dem Sprung zum neuen Level werden die Listen dann geleert, bzw. erneuert.
+Als Belohnung gibt es für jedes 5. Level ein Bonus-Leben.
+
+Kollisionen werden durch Funktionen innerhalb der Objekte überprüft und je nach Typ der Kollision dementsprechend reagiert.
+
+**breaktwo(Asteroid, Liste, Integer)**
+Wenn ein großer Asteroid getroffen wird, wird er in zwei kleinere aufgeteilt, die in verschiedene Richtungen fliegen.
+
+**paused(screen)**
+Pausiert das Spiel mit der großen Info *Pause* auf dem Bildschirm.
+
+**cannonfodder(Integer) -> list**
+Erstellt die Hürden für das Spiel, also die großen und kleinen Asteroiden. Diese werden an zufällige Orte mit zufälligen Richtungen gesetzt. Mit Steigerung des Levels steigert sich auch die Geschwindigkeit.
+
+**score(Ship, Integer, Screen)**
+Zeigt die Statistiken des aktuellen Spiels im oberen linken Bereichs des Fensters an. Die Sichtbarkeit wird durch ein transparentes Feld im Hintergrund gesichert.
+
+**gameover(Screen, Ship)**
+Ist für die Darstellung des Game Over Screens beim Verlust aller Leben zuständig und nimmt den Namen für den eventuellen Eintrag in die Highscore-Liste über die Textbox entgegen.
+
+**nextlevel(Screen, Timepoint)**
+Ist für die Information zuständig, dass das nächste Level erreicht wurde. Damit nicht ausversehen diese Anzeige übersprungen wird, kann erst nach einer gewissen Zeit das nächste Level gestarte werden.
+Pro Level verstärkt sich die Geschwindigkeit der Asteroiden.

@@ -1,0 +1,82 @@
+Basisklasse der meisten Objekte innerhalb des Spieles, die somit auch vergleichbar gemacht werden.
+
+polygon.py / Polygon
+------------------
+
+**__init__(Liste, Point, Float) -> Polygon**
+
+Enthält:
+- Form
+- Position
+- Richtung
+- Geschwindigkeit
+- Radius
+- Status
+- Startposition
+
+Durch vorgegebene Funktionen werden die eingegebene Koordinaten richtig positioniert.
+
+**getPosition() -> Point**
+Gibt die Position als Point aus.
+
+**getPositionList() -> Liste**
+Gibt die Position als Liste aus.
+
+**setPosition(Point)**
+Verändert die Position des Objektes.
+
+**getRotation() -> Float**
+Gibt die Richtung, in die das Objekt fliegt, aus.
+
+**rotate(Float)**
+Verändert die Richtung, in die das Objekt fliegt.
+
+**getRadius() -> Float**
+Gibt den Radius für eine erste Kollisionkontrolle aus.
+
+**getSpeed() -> Float**
+Gibt die Geschwindigkeit aus, die das Objekt gerade hat.
+
+**move()**
+Verändert die Koordinaten basierend auf dem Richtungswinkel, welcher das Objekt hat.
+
+**activate()**
+Kennzeichnet das Objekt als aktiv, also als relevant für den aktuellen Spielverlauf.
+
+**deactivate()**
+Kennzeichnet das Objekt als inaktiv, also als nicht relevant für den aktuellen Spielverlauf.
+
+**isActive() -> Boolean**
+Überprüft ob das Objekt in diesem Moment aktiv ist.
+
+**draw(screen)**
+Zeichnet das Objekt nach berechneten Koordinaten.
+
+**getPoints() -> Liste(Points)**
+Gibt die Koordinaten des Objektes mit Bezug auf die Ausrichtung nach dem Rotationswinkel aus.
+
+**getPointsList() -> Liste**
+Gibt die Koordinaten, wie bei getPoints, nur als Array aus. Erleichtert die Weiterreichung an pygame-Funktionen.
+
+**_radius()**
+Berechnet den Radius eines Objektes, um Ressourcen bei der Kollisionsberechnung zu sparen.
+
+**detect(Polygon) -> Boolean**
+Erster Schritt der Kollisionsberechnung anhand der Radien. Ist nach dieser eine Kollision möglich, werden die Objekte einer detailreicheren Berechnung durch weitere Funktionen unterzogen.
+
+**intersects(other) -> Boolean**
+Koordiniert den zweiten Schritt der Kollisionsberechnung, in der überprüft wird, ob sich die Objekte tatsächlich überschneiden.
+
+**contains(point) -> Boolean**
+Überprüft je ob ein Punkt des einen Objektes in dem Bereich des anderen Objektes liegt.
+
+**_findArea() -> float und _findCenter() -> float**
+Vorgegebene Funktionen, die *contains* dabei unterstützen, die Berechnung von Überlagerungen durchzuführen.
+
+
+point.py / Point
+------------------
+Point bietet eine Klasse zur Darstellung von Koordinaten
+
+**__init__(Integer, Integer) -> Point**
+Es werden zwei Integer angenommen.

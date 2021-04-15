@@ -1,0 +1,13 @@
+Schüsse des Schiffes.
+
+bullet.py
+------------------
+
+**__init__(ship) -> Bullet**
+Basiert auf Polygon. Geschwindigkeit des Objektes basiert auf Geschwindigkeit des Schiffes. Der Schuss wird also schneller, umso schneller das Schiff ist. Die Frequenz bleibt jedoch die gleiche.
+
+**draw()**
+Der Schuss wird gezeichnet und ist gefüllt.
+
+**move()**
+Schuss wird mit neuen Koordinaten gezeichnet, wenn der Bildschirm noch nicht oder erst in diesem Moment verlassen wurde.

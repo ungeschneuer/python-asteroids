@@ -1,0 +1,55 @@
+[
+	{
+		"heading" : "Einführung",
+		"column" : 1,
+		"pages" : [
+			{
+				"title": "Überblick",
+				"source": "index.txt"
+			},{
+							"title": "Inhaltsverzeichnis",
+							"source": "inhaltsverzeichnis.txt"
+			}
+		]
+	},
+	{
+		"heading" : "Menü",
+		"column" : 2,
+		"pages" : [
+			{
+				"title": "Startscreen",
+				"source": "startscreen.txt"
+			},{
+				"title": "Highscore",
+				"source": "highscore.txt"
+			},{
+							"title": "Classic",
+							"source": "classic.txt"
+						},{
+										"title": "Duell",
+										"source": "duell.txt"
+									}
+		]
+	},{
+		"heading" : "Objekte",
+		"column" : 3,
+		"pages" : [
+			{
+				"title": "Polygon",
+				"source": "polygon.txt"
+			},{
+				"title": "Asteroiden",
+				"source": "asteroid.txt"
+			},{
+				"title": "Ship",
+				"source": "ship.txt"
+			},{
+				"title": "Bullet",
+				"source": "bullet.txt"
+			},{
+				"title": "Star",
+				"source": "star.txt"
+			}
+		]
+	}
+]

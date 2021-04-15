@@ -1,0 +1,28 @@
+Die Highscore-Funktion wird hauptsächlich durch das Modul scoreboard.py realisiert, wobei die Darstellung direkt in start.py stattfindet. Der Highscore wird in einer einfachen Textdatei gespeichert, die ebenso einfach manipuliert werden könnte. Jedoch handelt es sich eben auch nur um ein Spiel, wodurch Sicherheitsbedenken zu vernachlässigen sind. Des Weiteren ermöglicht dies einen Austausch mit Freunden, so könnte die Datei in eine geteilte Dropbox gelegt und deren Ort in configuration.py angepasst werden, sodass alle auf den gleichen Highscore zugreifen und sich messen können.
+
+scoreboard.py
+------------------
+Dieses Modul ist für die Verwaltung der Highscores zuständig.
+
+**write_highscore(int, string) -> boolean**
+Empfängt den Highscore und Namen von dem Game Over Bildschirm des Classic-Modus und speichert diesen ab, wenn er zu den Top 10 gehört. Die Funktion sortiert ebenfalls automatisch die Einträge nach Punktehöhe.
+
+**reset()**
+Setzt den Highscore zurück. Ist für den Nutzer nicht aufrufbar innerhalb des Programmes.
+
+**read()**
+Wird für die Darstellung des Highscores genutzt. Liest aus einer fest definierten Textdatei und formatiert die Daten für den weiteren Darstellungsvorgang.
+
+
+textbox.py
+------------------
+Dieses Modul wird eigentlich erst im Game Over Screen des Spieles benutzt, hat jedoch mehr mit dem Highscore als mit der eigentlichen Spielmechanik zutun.
+
+**showbox(screen, string)**
+Design der Box innerhalb des Game Over Screens und der Darstellung des bisher eingegebenen Textes.
+
+**inputbox(screen)**
+Nimmt die Eingabe des Nutzers an und gibt sie zur Darstellung zurück. Die Eingabe wird aus Anzeigegründen im späteren Verlauf auf 6 Zeichen ohne Leerzeichen limitiert. Außerdem wird nur das Alphabet, sowie Zahlen zugelassen, um nicht lesbare Zeichen auszuschließen.
+
+**characterlegal(int) -> boolean**
+Nimmt einen Unicode in der UTF-8 Darstellung an und überprüft, ob das dahinter stehende Zeichen für die Eingabe zugelassen ist.

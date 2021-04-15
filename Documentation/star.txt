@@ -1,0 +1,22 @@
+Sterne, die den Hintergrund ausmachen. Bei jedem Wechsel des Bereiches innerhalb des Spieles wird der Sternenhimmel neu formiert. Andere Objekte können nicht mit den Sternen interagieren.
+
+star.py
+------------------
+### Class Star
+
+ **__init__() -> Star**
+ Es werden von außen keine Werte angegeben. Position und Helligkeit des einzelnen Sternes werden bei Aufruf eines Objektes automatisch zufällig ausgewählt.
+
+ **setRandomBrightness()**
+ Definiert eine zufällige Helligkeit für den einzelnen Stern.
+
+ **setRandomPosition()**
+ Definiert zufällige Position innerhalb des Spielfeldes.
+
+ **draw()**
+ Zeichnet den Stern ins Spielfeld.
+
+### Weitere Funktion
+
+**newConstellation() -> Liste**
+Erzeugt eine Liste von Sternen-Objekten mit zufälliger Position und Helligkeit.

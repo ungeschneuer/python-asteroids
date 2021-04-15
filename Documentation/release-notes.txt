@@ -1,0 +1,5 @@
+- Leere Namen können nicht mehr in den Highscore gelangen.
+- Bonus Leben bei 5 überlebten Leveln
+- Entfernen der Bremse. Anpassung des Driften.
+- Anpassung im Design
+- Multiplayer hinzugefügt

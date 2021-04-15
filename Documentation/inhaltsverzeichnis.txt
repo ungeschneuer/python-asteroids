@@ -1,0 +1,34 @@
+Eine Übersicht darüber, welche Module auf welcher Unterseite dargestellt werden.
+
+**Startscreen**
+- configuration.py
+- start.py
+
+
+**Highscore**
+- scoreboard.py
+- textbox.py
+
+
+**Spiel**
+- classic.py
+
+**Duell**
+- duell.py
+
+
+**Polygon**
+- polygon.py
+- point.py
+
+
+**Asteroid**
+- asteroid.py
+
+
+**Bullet**
+- bullet.py
+
+
+**Star**
+- star.py
